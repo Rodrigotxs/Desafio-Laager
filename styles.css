@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: gray;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#Dados {
+    margin: 2px auto;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+#botao button {
+    width: 150px;
+    font: inherit;
+    color: black;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
