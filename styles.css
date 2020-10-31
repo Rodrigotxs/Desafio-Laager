@@ -3,16 +3,17 @@ body {
 }
 
 header {
-    background: gray;
+    background: rgb(61, 141, 188);
     color: white;
     padding: 1rem;
     text-align: center;
-    width: 100%;
+    width: auto;
 }
 
 #Dados {
+    background-color: rgb(159, 216, 248);
     margin: 2px auto;
-    width: 1000px;
+    width: auto;
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -24,7 +25,7 @@ header {
     width: 150px;
     font: inherit;
     color: black;
-    background-color: lightblue;
+    background-color: rgb(167, 195, 36);
     border: 1px solid black;
     padding: 2px;
     cursor: pointer;

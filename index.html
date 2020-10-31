@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Laager</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="desafio-laager.js"></script>
 
 </head>
 
@@ -14,27 +15,67 @@
     </header>
 
     <div id="Dados">
-        <h2>Enviar valores para a Lista</h2>
+        <h2>ENVIAR VALORES PARA A LISTA</h2>
 
 
         <!--
             Entrada de Dados
         -->
         <div class="row">
-            <input />
-            <input />
-            <input />
-            <input />
-            <input />
-        </div>
+            <form id="form" method="GET" action="desafio-laager.js">
+                <input id="input-1" name="input-1" width="100px" />
+                <input id="input-2" name="input-2" width="100px" />
+                <input id="input-3" name="input-3" width="100px" />
+                <input id="input-4" name="input-4" width="100px" />
+                <input id="input-5" name="input-5" width="100px" />
 
-        <!--
+                <!--
             Botão para enviar os valores digitados
         -->
-        <div id="botao">
-            <button type="button" id="btn-dados">Enviar</button>
+                <div id="botao">
+                    <button type="button" id="btn-dados" onclick="Enviar()">Enviar</button>
+                </div>
+            </form>
         </div>
+
     </div>
+    <div id="Dados">
+
+
+        <!--
+            Saída de Dados
+        -->
+        <p id="saida"></p>
+
+    </div>
+
+    </div>
+
+
+
+
+    <script>
+        function Enviar() {
+            let lista = new LinkedList();
+            const v1 = document.getElementById('input-1').value;
+            const v2 = document.getElementById('input-2').value;
+            const v3 = document.getElementById('input-3').value;
+            const v4 = document.getElementById('input-4').value;
+            const v5 = document.getElementById('input-5').value;
+            lista.adcFinal(v1);
+            lista.adcFinal(v2);
+            lista.adcFinal(v3);
+            lista.adcFinal(v4);
+            lista.adcFinal(v5);
+
+            let ss = lista.printLista().innerHTML;
+
+
+            document.getElementById("saida").innerHTML = ss;
+        }
+    </script>
+
+
 </body>
 
 </html>
