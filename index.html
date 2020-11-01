@@ -45,18 +45,34 @@
         <!--
             Saída de Dados
         -->
-        <p id="saida"></p>
+        <table align="center">
+            <tr>
+                <td>Head - Lista: </td>
+                <td id='saida1'></td>
+            </tr>
+            <tr>
+                <td>Lista: </td>
+                <td id='saida2'></td>
+            </tr>
+            <tr>
+                <td>Head - Lista Invertida: </td>
+                <td id='saida3'></td>
+            </tr>
+            <tr>
+                <td>Lista Invertida: </td>
+                <td id='saida4'></td>
+            </tr>
+        </table>
 
     </div>
 
     </div>
-
-
-
 
     <script>
         function Enviar() {
-            let lista = new LinkedList();
+            let lista = new LinkedList(); // Iniciando a lista
+
+            //Recebendo os valores de entrada
             const v1 = document.getElementById('input-1').value;
             const v2 = document.getElementById('input-2').value;
             const v3 = document.getElementById('input-3').value;
@@ -68,10 +84,18 @@
             lista.adcFinal(v4);
             lista.adcFinal(v5);
 
-            let ss = lista.printLista().innerHTML;
+            var HLE = lista.getHead();
+            var LE = lista.toStringMethod();
+            lista.inverteLista();
+            var HLI = lista.getHead();
+            var LI = lista.toStringMethod();
 
+            //Enviando valores para a página HTML
+            document.getElementById("saida1").innerHTML = HLE;
+            document.getElementById("saida2").innerHTML = LE.join(' ');
+            document.getElementById("saida3").innerHTML = HLI;
+            document.getElementById("saida4").innerHTML = LI.join(' ');
 
-            document.getElementById("saida").innerHTML = ss;
         }
     </script>
 

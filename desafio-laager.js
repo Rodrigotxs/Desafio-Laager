@@ -33,13 +33,6 @@ class LinkedList {
         this.size++;
     }
 
-
-    // Limpar lista
-    limparLista() {
-        this.head = null;
-        this.size = 0;
-    }
-
     //Printar lista
     printLista() {
         let current = this.head;
@@ -48,6 +41,19 @@ class LinkedList {
             console.log(current.data);
             current = current.next;
         }
+    }
+
+    // Converter objetos em strings
+    toStringMethod() {
+        let current = this.head;
+        let j = [];
+
+        for (let i = 0; i < this.size; i++) {
+            j.push(current.data.toString());
+            console.log(j);
+            current = current.next;
+        }
+        return j;
     }
 
     // Inverte a lista
@@ -68,7 +74,8 @@ class LinkedList {
         }
         // Retornar o Head a lista
     getHead() {
-        return console.log(this.head.data);
+        let valHead = this.head.data;
+        return valHead;
     }
 
 }
