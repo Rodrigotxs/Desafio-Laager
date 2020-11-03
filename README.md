@@ -7,8 +7,8 @@ lista encadeada simples. Cada nó da lista deve ser capaz de armazenar
 um valor de um tipo qualquer: `String`, `inteiros`, `datas` ou outros objetos.
 
 O código não poderá utilizar nenhuma classe de coleção já pronta da 
-linguagem que você escolher (por exemplo: em Java, classes como Vector, 
-ArrayList, Hashtable, LinkedList, etc) ou de qualquer outra biblioteca externa.
+linguagem que você escolher (por exemplo: em Java, classes como `Vector`, 
+`ArrayList`, `Hashtable`, `LinkedList`, etc) ou de qualquer outra biblioteca externa.
 
 A função `inverteLista` poderá utilizar apenas (além da própria lista
 passada como parâmetro de entrada) até 3 ponteiros auxiliares. Ela não
