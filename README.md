@@ -1,6 +1,6 @@
 # Desafio-Laager
 
-## Objetivo:
+#### Objetivo:
 
 Criar uma classe que represente a estrutura de dados de um 'Nó' de uma
 lista encadeada simples. Cada nó da lista deve ser capaz de armazenar 
